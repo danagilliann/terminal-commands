@@ -21,8 +21,8 @@ Now save and exit (or write and quit for vim) and reload your `~/.bash_profile` 
 `source ~/.bash_profile`
 If nothing happens, then that's good! Now enter your alias on your command line and see the little instruction guide you wrote:
 ```
-cmd
+cmds
 ```
-I entered `cmd` because that was the alias I made.
+I entered `cmds` because that was the alias I made.
 ##### 4. PARTY!
-:D
+:D If you have questions, [let me know](https://twitter.com/danagilliann)!
