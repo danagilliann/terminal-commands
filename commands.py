@@ -30,4 +30,7 @@ print(bcolors.OKGREEN + "\tpwd" + bcolors.ENDC)
 print("Open Applications folder:")
 print(bcolors.OKGREEN + "\topen /Applications" + bcolors.ENDC) 
 
+print("Adjust volume")
+print(bcolors.OKGREEN + "\tosascript -e 'set volume x'" + bcolors.ENDC) 
+
 print()
