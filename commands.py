@@ -27,4 +27,7 @@ print(bcolors.OKGREEN + "\tvim ~/.vimrc" + bcolors.ENDC)
 print("View current path:")
 print(bcolors.OKGREEN + "\tpwd" + bcolors.ENDC)
 
+print("Open Applications folder:")
+print(bcolors.OKGREEN + "\topen /Applications" + bcolors.ENDC) 
+
 print()
