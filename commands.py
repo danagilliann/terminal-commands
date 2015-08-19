@@ -33,4 +33,10 @@ print(bcolors.OKGREEN + "\topen /Applications" + bcolors.ENDC)
 print("Adjust volume")
 print(bcolors.OKGREEN + "\tosascript -e 'set volume x'" + bcolors.ENDC) 
 
+print("Manually start Postgres")
+print(bcolors.OKGREEN + "\tpg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start" + bcolors.ENDC) 
+print()
+
+print("Manually stop Postgres")
+print(bcolors.OKGREEN + "\tpg_ctl -D /usr/local/var/postgres stop -s -m fast" + bcolors.ENDC) 
 print()
