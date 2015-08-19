@@ -16,7 +16,7 @@ print("Run a virtualenv:")
 print(bcolors.OKGREEN + "\t. venv/bin/activate" + bcolors.ENDC)
 
 print("Disconnect from virtualenv:")
-print(bcolors.OKGREEN + "\tdisconnect" + bcolors.ENDC)
+print(bcolors.OKGREEN + "\tdeactivate" + bcolors.ENDC)
 
 print("Remove a file:")
 print(bcolors.OKGREEN + "\trm -Rf /path/of/file" + bcolors.ENDC)
