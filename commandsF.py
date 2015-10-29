@@ -20,7 +20,8 @@ instruction = ['Look up a word in the dictionary:',
 'Manually start Postgres',
 'Manually stop Postgres',
 'Rename files',
-'Forward word / Backward word / Backward-kill-word']
+'Forward word / Backward word / Backward-kill-word / Go back or forward one word',
+'Compile and run Java files']
 
 command = ['open dict://word',
 '. venv/bin/activate',
@@ -33,7 +34,8 @@ command = ['open dict://word',
 'pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start',
 'pg_ctl -D /usr/local/var/postgres stop -s -m fast',
 'mv old_file new_file',
-'ESC + f / ESC + b / ESC + DEL']
+'ESC + f / ESC + b / ESC + DEL / ESC + b / ESC + f',
+'javac -g filename.java' + '\n\t' + 'java classWithTheMainFunction']
 
 for n in range(0, len(instruction)):
 	print(instruction[n])
