@@ -3,42 +3,24 @@ class bcolors:
 	OKGREEN = '\033[92m'
 	ENDC = '\033[0m'
 
-print()
-print(bcolors.HEADER + "Hello Dana!" + bcolors.ENDC)
-print()
-print("Here are some commands that you might find useful\nWe all forget things from time to time :)")
-print()
+instruction = {
+        'Look up a word in the dictionary:':'open dict://word',
+        'Run a virtualenv:':'. venv/bin/activate',
+        'Disconnect from virtualenv:':'deactivate',
+        'Remove a file:':'rm -Rf /path/of/file',
+        'Alter .vimrc:':'vrc',
+        'View current path:':'pwd',
+        'Open Applications folder:':'open /Applications', 
+        'Adjust volume':'osascript -e "set volume x"',
+        'Manually start Postgres':'pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start',
+        'Manually stop Postgres':'pg_ctl -D /usr/local/var/postgres stop -s -m fast',
+        'Rename files or move':'mv old_file new_file',
+        'Copy files':'cp file directory/',
+        'Forward word / Backward word / Backward-kill-word / Go back or forward one word':'ESC + f / ESC + b / ESC + DEL / ESC + b / ESC + f',
+        'Compile and run Java files':'javac -g filename.java' + '\n\t' + 'java classWithTheMainFunction',
+        'Stop iTunes from opening with play/pause':'launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist'+ '\n\t' + 'to undo, make unload, load'
+}
 
-instruction = ['Look up a word in the dictionary:',
-'Run a virtualenv:',
-'Disconnect from virtualenv:',
-'Remove a file:',
-'Alter .vimrc:',
-'View current path:',
-'Open Applications folder:', 
-'Adjust volume',
-'Manually start Postgres',
-'Manually stop Postgres',
-'Rename files',
-'Forward word / Backward word / Backward-kill-word / Go back or forward one word',
-'Compile and run Java files']
-
-command = ['open dict://word',
-'. venv/bin/activate',
-'deactivate',
-'rm -Rf /path/of/file',
-'vim ~/.vimrc',
-'pwd',
-'open /Applications', 
-'osascript -e "set volume x"',
-'pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start',
-'pg_ctl -D /usr/local/var/postgres stop -s -m fast',
-'mv old_file new_file',
-'ESC + f / ESC + b / ESC + DEL / ESC + b / ESC + f',
-'javac -g filename.java' + '\n\t' + 'java classWithTheMainFunction']
-
-for n in range(0, len(instruction)):
-	print(instruction[n])
-	print(bcolors.OKGREEN + '\t' + command[n] + bcolors.ENDC)
-	print()
+for k,v in instruction.items():
+	print('\n' + k + '\n\t' + bcolors.OKGREEN + v + bcolors.ENDC)
 
