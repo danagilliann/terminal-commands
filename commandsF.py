@@ -18,9 +18,11 @@ instruction = {
         'Copy files':'cp file directory/',
         'Forward word / Backward word / Backward-kill-word / Go back or forward one word':'ESC + f / ESC + b / ESC + DEL / ESC + b / ESC + f',
         'Compile and run Java files':'javac -g filename.java' + '\n\t' + 'java classWithTheMainFunction',
-        'Stop iTunes from opening with play/pause':'launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist'+ '\n\t' + 'to undo, make unload, load'
+        'Stop iTunes from opening with play/pause':'launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist'+ '\n\t' + 'to undo, make unload, load',
+        'Copy and paste directory':'cp -a /path/from /path/to',
+        'Simple Python server':'python -m SimpleHTTPServer'
 }
 
 for k,v in instruction.items():
-	print('\n' + k + '\n\t' + bcolors.OKGREEN + v + bcolors.ENDC)
+	print(k + '\n\t' + bcolors.OKGREEN + v + bcolors.ENDC)
 
